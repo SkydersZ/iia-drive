@@ -1,1 +1,16 @@
-<p>storage works!</p>
+<h3>Tous les fichiers</h3>
+<hr>
+<div class="element" *ngFor="let file of files">
+  {{file.name}}
+
+  <button class="modify-button"
+          type="button">
+      Modifier
+  </button>
+
+  <button class="delete-button"
+          type="button"
+          (click)="deleteDocumentFromFirebase(file.id)">
+      Supprimer
+  </button>
+</div>
