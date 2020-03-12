@@ -13,6 +13,7 @@ export class StorageService {
    * Créer une collection de fichier
    */
   public createCollection(): void {
+    // TODO: Creer la fonction d'ajout de fichier/dossier
     this.firestore.collection('files').add({
       name: 'bob.md',
       format: 'markdown'
